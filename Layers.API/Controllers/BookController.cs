@@ -8,13 +8,13 @@ using Microsoft.Extensions.Logging;
 namespace Layers.API.Controllers
 {
     [ApiController]
-    [Route("api/v1/layer")]
-    public class LayerController : ControllerBase
+    [Route("api/v1/book")]
+    public class BookController : ControllerBase
     {
         private readonly IBookService _service;
-        private readonly ILogger<LayerController> _logger;
+        private readonly ILogger<BookController> _logger;
 
-        public LayerController(ILogger<LayerController> logger,
+        public BookController(ILogger<BookController> logger,
                                IBookService service)
         {
             this._logger = logger;
