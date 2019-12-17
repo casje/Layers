@@ -18,7 +18,7 @@ namespace Layers.API.Models
 
         private String GenerateIdentifier()
         {
-            return Guid.NewGuid().ToString("N");
+            return Guid.NewGuid().ToString("N").Substring(1, 10);
         }
 
     }

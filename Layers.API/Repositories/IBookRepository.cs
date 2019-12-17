@@ -4,10 +4,10 @@ using Layers.API.Models;
 
 namespace Layers.API.Repositories
 {
-    public interface IBookRepository //<T> where T : Book
+    public interface IBookRepository : IRepository<Book>
     {
-        IEnumerable<Book> getItemsAll();
-        Boolean createItem(Book book);
+        //IEnumerable<Book> getItemsAll();
+        //Boolean createItem(Book book);
     }
 
 }

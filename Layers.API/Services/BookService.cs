@@ -15,12 +15,14 @@ namespace Layers.API.Services
         }
         public Boolean CreateBook(Book book)
         {
-            return _repository.createItem(book);
+            _repository.CreateEntity(book);
+            _repository.Save();
+            return true;
         }
 
         public IEnumerable<Book> GetBooks()
         {
-            return _repository.getItemsAll();
+            return _repository.GetAll();
         }
     }
 }
