@@ -22,7 +22,7 @@ namespace Layers.API.Controllers
         }
 
         [HttpGet]
-        public IActionResult getLayer()
+        public IActionResult getBooks()
         {
             //this._logger
             return Ok(new
